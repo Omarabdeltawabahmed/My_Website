@@ -1,0 +1,113 @@
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(0,217,255,.15),
+    transparent 40%),
+    #050816;
+
+    font-family:'Poppins',sans-serif;
+}
+
+.my-email
+{
+        font-family:'Poppins',sans-serif;
+}
+
+.contact-container{
+    width:90%;
+    max-width:800px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:40px;
+    backdrop-filter:blur(10px);
+    box-shadow:
+    0 0 30px rgba(0,217,255,.15);
+}
+
+.contact-container h1{
+    text-align:center;
+    color:#00d9ff;
+    margin-bottom:35px;
+    font-size:2.5rem;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input-group label{
+    color:white;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.input-group input,
+.input-group textarea{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:12px;
+    padding:15px;
+    color:white;
+    font-size:1rem;
+    outline:none;
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#00d9ff;
+    box-shadow:
+    0 0 15px rgba(0,217,255,.3);
+}
+
+.input-group textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:15px;
+    background:#00d9ff;
+    color:#050816;
+    font-size:1.1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:
+    0 0 25px rgba(0,217,255,.5);
+}
+
+@media (max-width: 600px){
+    .contact-container{
+        width:calc(100% - 32px);
+        padding:24px 18px;
+    }
+
+    .contact-container h1{
+        font-size:clamp(1.7rem, 8vw, 2.2rem);
+        overflow-wrap:anywhere;
+    }
+
+    .input-group input,
+    .input-group textarea{
+        min-width:0;
+        max-width:100%;
+    }
+}

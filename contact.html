@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Omar</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="contact-container">
+
+    <h1>Say HI, Don't Be Shy!</h1>
+
+    <form action="mailto:omarabdeltawab100@gmail.com" method="post" enctype="text/plain">
+
+        <div class="input-group">
+            <label>To</label>
+            <input type="email"
+                    value="omarabdeltawab100@gmail.com"
+                    readonly class="my-email">
+        </div>
+
+        <div class="input-group">
+            <label>Your Email</label>
+            <input type="email"
+                    name="email"
+                    required>
+        </div>
+
+        <div class="input-group">
+            <label>Subject</label>
+            <input type="text"
+                    name="subject"
+                    required>
+        </div>
+
+        <div class="input-group">
+            <label>Message</label>
+            <textarea name="message"
+                        rows="8"
+                        required></textarea>
+        </div>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
